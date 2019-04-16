@@ -93,7 +93,7 @@ if ($AppCatalogAdmin) {
         $appcatalog = Get-PnPTenantAppCatalogUrl
     
         try { # Test that user can write values to the App Catalog
-            Set-PnPStorageEntity -Key MicrosoftCustomLearningCdn -Value "https://pnp.github.io/custom-learning-office-365/v2/" -Description "CDN source for Microsoft Content" -ErrorAction Stop 
+            Set-PnPStorageEntity -Key MicrosoftCustomLearningCdn -Value "https://IF-Blueprint.github.com/custom-learning-office-365-de-de/dist/v2/" -Description "CDN source for Microsoft Content" -ErrorAction Stop 
             } catch {
                 Write-Host "User $($Credentials.UserName) cannot write to App Catalog site" -BackgroundColor Black -ForegroundColor Red
                 Write-Host "Please make sure they are a Site Collection Admin for $appcatalog"
